@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+/*Changa todos os bolds*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#cabecalho {
+    background-color: rgb(22, 22, 22);
+    margin-bottom: 30px;
+    border-radius: 70px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo {
+    margin-left: 70px;
+    max-width: 50px;
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.336));
+    border-radius: 1px;
+    animation: degrade 2s linear infinite;
+}
+
+/*Animação da logo*/
+@keyframes degrade {
+    0% {
+        opacity: 1;
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.336));
+    }
+
+    15% {
+        opacity: 0.1;
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.336));
+    }
+
+    25% {
+        opacity: 0.3;
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.336));
+    }
+
+    35% {
+        opacity: 0.5;
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.336));
+    }
+
+    50% {
+        opacity: 0.7;
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.336));
+    }
+
+    70% {
+        opacity: 0.9;
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.336));
+    }
+}
+
+#cabecalho #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    position: relative;
+    font-weight: bold;
+}
+
+#cabecalho #menu>ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#cabecalho #menu a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #8C8C8C;
+    transition: all .6s ease-in-out;
+}
+
+#cabecalho #menu a:hover {
+    background-color: #333333;
+    color: black;
+}
+
+#cabecalho .container #menu #submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+
+hr {
+    width: 120px;
+    height: .5px;
+    background-color: #444444;
+    opacity: 0.3;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cabecalho #menu li:hover #submenu {
+    display: block;
+    background-color: rgb(22, 22, 22);
+    list-style: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.titulo {
+    color: rgb(131, 131, 131);
+    text-shadow: 0px 0px 12px rgb(99, 99, 99);
+    font-family: 'Changa', sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 6px;
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#intro {
+    width: 90%;
+    max-width: 500px;
+    color: #8C8C8C;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/*js configs index*/
+.carrossel img {
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+}
+
+.area-carrossel {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*------------------------*/
+.legenda {
+    font-family: 'Changa', sans-serif;
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 20%, 0.050);
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 900px;
+    color: #8C8C8C;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*------------------------------------------*/
+/*pag best seller*/
+
+#grade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.item img {
+    width: 130px;
+    height: 200px;
+    transition: all 1s ease;
+}
+
+.item figure img:hover {
+    box-shadow: 0px 0px 5px white;
+}
+
+figcaption {
+    color: #8C8C8C;
+    margin-top: 0px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.item input {
+    margin-top: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.411);
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    font-size: 12px;
+    border: none;
+    color: white;
+    transition: transform .2s ease;
+}
+
+.item input:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(197, 197, 197, 0.411);
+    background-color: rgb(170, 0, 0);
+    border: none;
+    color: white;
+    transform: scale(1.3);
+    transition: transform 0.2s ease;
+}
+
+/*------------------------------------------*/
+/*Pag. special*/
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box img {
+    background-color: rgba(51, 51, 51, 0.200);
+    border-radius: 5px;
+    /* padding: 10px; */
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .box figure figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .box input {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.411);
+    font-weight: bold;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: red;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: none;
+    color: white;
+    transition: transform .2s ease;
+  }
+
+  .box input:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(197, 197, 197, 0.411);
+    background-color: rgb(170, 0, 0);
+    border: none;
+    color: white;
+    transform: scale(1.3);
+    transition: transform 0.2s ease;
+  }
+
+  /*-------------------------------*/
+/*Elementos das paginas dos autores*/
+
+.paginas {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+  
+  .perfil {
+    width: 200px; 
+    height: auto;
+    margin: 0;
+    margin-right: 20px;
+    border: 3px double #8C8C8c;
+    box-shadow: 0px 0px 10px #8C8C8c;
+  }
+  
+  .texto {
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: justify;
+    width: 450px;
+    color: #8C8C8C;
+    background-color:  hsla(0, 0%, 20%, 0.050) ;
+    font-family: 'Changa', sans-serif;
+  }
+
+table {
+    color: #8C8C8C;
+    background-color:  hsla(0, 0%, 20%, 0.050) ;
+    border: 1px solid hsla(0, 0%, 55%, 0.10);
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead{
+    background-color:  hsla(0, 0%, 20%, 0.050) ;
+    text-align: center;
+    font-size: 16px;
+}
+
+thead th{
+    padding: 5px;
+    text-shadow: 0px 0px 5px #363636;
+    font-family: 'Changa', sans-serif;
+}
+
+tbody tr td{
+    border: 1px solid hsla(0, 0%, 55%, 0.10);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Changa', sans-serif;
+    font-weight: 500;
+}
+
+table img{
+    max-width: 125px;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------*/
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.4;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+#rodape {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rodape-texto {
+    flex: 1;
+}
+
+#rodape-texto span {
+    display: inline-block;
+    border-right: 1px solid white;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-family: 'Changa', sans-serif;
+    letter-spacing: 1px;
+}
+
+#rodape-icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#rodape-icons a {
+    margin-right: 60px;
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    transition: all 0.2s;
+}
+
+#rodape-icons a img {
+    width: 80px;
+    height: auto;
+}
+
+#rodape-icons a:hover {
+    text-decoration: none;
+    color: rgb(0, 197, 197);
+    transform: scale(1.2);
+}
+
+/*-------------------------------*/
+/*Barra de Rolagem*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8C8C8C;
+    border-radius: 5px;
+}
+
